@@ -3,3 +3,13 @@
 # If they answer “yes” to this second question, display the answer “It is too windy for an umbrella”, 
 # Otherwise display the message “Take an umbrella”. 
 # If they did not answer yes to the first question, display the answer “Enjoy your day”.
+
+raining = str.lower(input("Is it raining? "))
+if raining == "yes":
+    windy = str.lower(input("Is it windy? "))
+    if windy == "yes":
+        print("It is too windy for and umbrella.")
+    else:
+        print("Take an umbrella.")
+else:
+    print("Enjoy your day.")
